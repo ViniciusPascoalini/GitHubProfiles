@@ -1,5 +1,14 @@
-* {
-    box-sizing: border-box;
-    background-color: #F7C3E4;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F7C3E4;
+    background-image: url('https://ik.imagekit.io/pascoalini/octocat_ImnFhu1af.png');
+    background-size: 150px 100px;
+    
 }

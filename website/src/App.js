@@ -1,20 +1,23 @@
 import React from 'react';
 
 import Header from './components/Header';
+import SearchBar from './components/SearchBar';
 
 import './App.css';
 
+
+
+
 function App() {
   return (
-    <div>
+    <div className="App">
 
-      <Header />
+      <Header className="Header"/>
+
+        <SearchBar />
 
     </div>
   );
 }
 
 export default App
-
-
-//colors 255E6E
