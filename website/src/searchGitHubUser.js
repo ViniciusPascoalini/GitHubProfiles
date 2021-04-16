@@ -8,13 +8,17 @@ const octokit = new Octokit({
 
 
 const searchGitHubUser = async(user) => {
-    const req = await octokit.request(`GET /users/${user}`);
-    
-    console.log(req);
-    return(req);
-}
 
-searchGitHubUser('viniciuspascoalini'); //Dentro de Onclick
+    try {
+
+        const req = await octokit.request(`GET /users/${user}`);
+    
+        console.log(req);
+        return(req);
+    }   catch(err) {
+        console.log(err);
+    }
+}
 
 
 export default searchGitHubUser;

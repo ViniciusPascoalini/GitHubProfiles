@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
+import Users from './components/Users';
 
 import './App.css';
 
@@ -10,20 +11,14 @@ import './App.css';
 
 function App() {
 
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const handleSearchButton = () => {
-      const searchedName = document.getElementById("search-bar")
-      setSearchTerm(searchedName);
-  }
-
   return (
     <div className="App">
 
       <Header className="Header"/>
 
-        <SearchBar />
+      <SearchBar />
 
+      <Users/>
     </div>
   );
 }
