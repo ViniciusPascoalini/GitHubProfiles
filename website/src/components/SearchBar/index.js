@@ -1,19 +1,16 @@
 import React from 'react';
 
-import './SearchBar.css'
+import './SearchBar.css';
 
 const SearchBar = () => {
+
     return (
     <div className="seachBar-container">
 
-        <div className="search-bar">
+        <input className="search-bar" type="search" placeholder="Search a GitHub username..."/>
 
-            <div className="user-inputCamp">
-                TESTANDO...
-            </div>
-        </div>
-
-        <button className="SearchButton" onClick="handleSearch" >Search</button>
+        <button className="SearchButton" onClick="hi" >Search</button>
+        
 
     </div>   
 
